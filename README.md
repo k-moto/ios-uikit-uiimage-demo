@@ -18,7 +18,7 @@ NSObject
 |プロパティ名|説明|サンプル|
 |---|---|---|
 |imageOrientation | 画像の向きの情報を取得する | image.imageOrientation |
-|size | 画像のサイズを取得する | image else |
+|size | 画像のサイズを取得する | image.size |
 |scale | 画像のスケールを取得する | image.scale |
 
 ## 主要メソッド
