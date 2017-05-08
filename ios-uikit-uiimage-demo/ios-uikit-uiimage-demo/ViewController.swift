@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         setupImage()
         
         outputImage()
+        size()
     }
     
     //MARK:- 事前準備
@@ -45,7 +46,7 @@ class ViewController: UIViewController {
         image = UIImage.init(named: "Raccoon")
 //        image = UIImage.init(named: "Cat.jpg", in: Bundle.main, compatibleWith: nil)
     }
-    
+
     /// 画像名を指定して、UIImageを設定する(自動でキャッシュされない)
     private func setupImageContentsOfFile() {
         image = UIImage.init(contentsOfFile: imagePath)
@@ -76,6 +77,9 @@ class ViewController: UIViewController {
         let imageSize = image.size
         
         print("size: \(imageSize)")
+        print("width: \(imageSize.width)")
+        print("height: \(imageSize.height)")
+
     }
     
     /// 画像のスケールを取得する
